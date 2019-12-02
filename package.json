@@ -1,0 +1,16 @@
+{
+  "name": "bespey-adventofcode-2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/tsc-watch --onSuccess \"node .\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "tsc-watch": "^4.0.0",
+    "typescript": "^3.7.2"
+  }
+}
