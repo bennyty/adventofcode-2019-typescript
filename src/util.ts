@@ -10,6 +10,17 @@ export function readInput(dayNumber: number) {
 	}
 }
 
+export function getLatestDay() {
+	function digitsOnly(str: string) {
+		return str.replace(/[^\d]/g,'',)
+	}
+	let inputs = fs.readdirSync('./inputs')
+	let numbers = inputs.map(digitsOnly).map(Number).sort()
+	// console.log(numbers);
+	return numbers.pop()
+	// return 4
+}
+
 function getFileName(dayNumber: number): string {
 	return `./inputs/day${dayNumber}.txt`
 }
