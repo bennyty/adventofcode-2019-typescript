@@ -4,7 +4,8 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "start": "./node_modules/.bin/tsc-watch --onSuccess \"node .\""
+    "start": "./node_modules/.bin/tsc-watch --onSuccess \"node .\"",
+    "debug": "./node_modules/.bin/tsc-watch --onSuccess \"node --inspect-brk=0.0.0.0:9229 .\""
   },
   "author": "",
   "license": "ISC",

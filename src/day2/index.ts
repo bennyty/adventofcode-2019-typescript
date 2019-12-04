@@ -85,7 +85,7 @@ export default abstract class Day2<T, T2> implements AdventOfCodeDay<p1, p2> {
 					if (tick(m) === null) { break }
 				}
 			} while (m.tape[0] !== gravAssistAnswer);
-			return `100 * noun:(${noun}) + verb(${verb}) = ${100 * noun + verb}`
+			return `${100 * noun + verb} = 100 * noun:(${noun}) + verb(${verb})`
 		}
 	}
 
